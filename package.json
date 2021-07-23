@@ -53,7 +53,7 @@
     "nodemon": "^2.0.4",
     "prop-types": "^15.7.2",
     "turbolinks": "^5.2.0",
-    "viewloader": "^2.0.2"
+    "viewloader": "2.0.0"
   },
   "peerDependencies": {
     "react": ">=16.0.0",
