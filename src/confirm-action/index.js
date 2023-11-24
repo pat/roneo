@@ -31,7 +31,7 @@ export default function confirmAction (el, props) {
         if (csrfElement) {
           let input = document.createElement('input')
           input.setAttribute('type', 'hidden')
-          input.setAttribute('name', '_csrf')
+          input.setAttribute('name', '_csrf_token')
           input.setAttribute('value', csrfElement.getAttribute('content'))
           form.appendChild(input)
         }
