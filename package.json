@@ -48,7 +48,7 @@
     "fastclick": "^1.0.6",
     "fontfaceobserver": "^2.1.0",
     "formalist-serialize-react": "^1.0.6",
-    "formalist-standard-react": "https://github.com/readingsweb/formalist-standard-react#c6c6324",
+    "formalist-standard-react": "https://github.com/readingsweb/formalist-standard-react#6c21708",
     "prop-types": "^15.7.2",
     "turbolinks": "^5.2.0",
     "viewloader": "2.0.0"

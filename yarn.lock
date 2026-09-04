@@ -861,6 +861,11 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@lukeed/csprng@^1.0.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@lukeed/csprng/-/csprng-1.1.0.tgz#1e3e4bd05c1cc7a0b2ddbd8a03f39f6e4b5e6cfe"
+  integrity sha512-Z7C/xXCiGWsg0KuKsHTKJxbWhpI3Vs5GwLfOean7MGyVFGqdRgBbAjOCh6u4bbjPc/8MJ2pZmK/0DLdCbivLDA==
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -1478,11 +1483,6 @@ decompress-response@^3.3.0:
   dependencies:
     mimic-response "^1.0.0"
 
-decorate-component-with-props@^1.0.2:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/decorate-component-with-props/-/decorate-component-with-props-1.1.0.tgz#b496c814c6a2aba0cf2ad26e44cbedb8ead42f15"
-  integrity sha512-tTYQojixN64yK3/WBODMfvss/zbmyUx9HQXhzSxZiSiofeekVeRyyuToy9BCiTMrVEIKWxTcla2t3y5qdaUF7Q==
-
 deep-equal@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-1.0.1.tgz#f5d260292b660e084eff4cdbc9f08ad3247448b5"
@@ -1585,25 +1585,24 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
-draft-js-ast-exporter@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/draft-js-ast-exporter/-/draft-js-ast-exporter-2.0.0.tgz#c6be9717ef7358084cf172eea5e8ddc47966510c"
-  integrity sha1-xr6XF+9zWAhM8XLupejdxHlmUQw=
+draft-js-ast-exporter@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/draft-js-ast-exporter/-/draft-js-ast-exporter-2.0.2.tgz#0e7c15274074e4ec1146ac42e8235db98c5fd5eb"
+  integrity sha512-hRzibft7uV2pBfDrNuWVCye21KugQlzwc+aoEQ5JUg7BSG/o84vtDu5CFKa5qivjh+O1+9MRg+FcBBdEKCZnKw==
   dependencies:
-    draft-js-utils "^0.1.7"
+    draft-js-utils "^1.4.0"
 
-draft-js-ast-importer@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/draft-js-ast-importer/-/draft-js-ast-importer-2.0.1.tgz#eb74e4a3052aa4b094f2e764bd46d2cb919fc81c"
-  integrity sha1-63TkowUqpLCU8udkvUbSy5GfyBw=
+draft-js-ast-importer@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/draft-js-ast-importer/-/draft-js-ast-importer-2.0.3.tgz#ac72d71d4c296c64ae57cab75cfa472823082a30"
+  integrity sha512-C66+K7mqJq+xb62bWt74iiZat3eU1J+YarBiKkrTvSL6py1e4AXogoZsYrZ9n9NT0RDhIFRAyM/ftHDUaXDu9g==
   dependencies:
-    draft-js-utils "^0.1.7"
     immutable "~3.7.4"
 
-draft-js-autolist-plugin@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/draft-js-autolist-plugin/-/draft-js-autolist-plugin-2.0.0.tgz#2b0bf6d6cf8d4b6cfb0e6154218807e92894569b"
-  integrity sha1-Kwv21s+NS2z7DmFUIYgH6SiUVps=
+draft-js-autolist-plugin@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/draft-js-autolist-plugin/-/draft-js-autolist-plugin-3.0.0.tgz#911f37ee426c0d93cd3b7f4f07f3d4c447e46e9f"
+  integrity sha512-P/4xM5rBUUz+uxU+4b+l4dKb30XfOoQBC0ULcSc92nX2FC0moxKYXEVZnYJe1JGVhseerGwcuEJjVeFn9WriEA==
 
 draft-js-block-breakout-plugin@^2.0.1:
   version "2.0.1"
@@ -1612,37 +1611,25 @@ draft-js-block-breakout-plugin@^2.0.1:
   dependencies:
     immutable "~3.7.4"
 
-draft-js-plugins-editor@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/draft-js-plugins-editor/-/draft-js-plugins-editor-2.1.1.tgz#7c9aedd696737c6ddf45d47c978bd764ef33f688"
-  integrity sha512-fKGe71irNvFHJ5L/lUrh+3vPkBNq0de6x+cgiZUJ9zQERc5KPBtGXIFiarLFVHyrRTCPq+K6xmgfFSAERaFHPw==
+draft-js-plugins-editor@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/draft-js-plugins-editor/-/draft-js-plugins-editor-3.0.0.tgz#196d1e065e2c29faebaab4ec081b734fdef294a2"
+  integrity sha512-bFEL0FUIPg9VK3KSeBZ3D+uMqQEVe4Cv7++LWCMASRH02jy6x2f87NRxSZLzTQES5+oL6Qg+OEUlaTn409145A==
   dependencies:
-    decorate-component-with-props "^1.0.2"
-    find-with-regex "^1.1.3"
     immutable "~3.7.4"
     prop-types "^15.5.8"
-    union-class-names "^1.0.0"
 
-draft-js-single-line-plugin@^2.0.1:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/draft-js-single-line-plugin/-/draft-js-single-line-plugin-2.0.2.tgz#b0a63b19f70a76bfc496db7cd621cf504a10a675"
-  integrity sha1-sKY7GfcKdr/Eltt81iHPUEoQpnU=
+draft-js-single-line-plugin@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/draft-js-single-line-plugin/-/draft-js-single-line-plugin-2.0.5.tgz#71d3b7612c7477d94fd8a3bab119d6ac1c738b20"
+  integrity sha512-/zdekY1NpH8z/GPv1CnqSuLttRDcUmO+Ryh00p5Y+EqeprjpNfnr/8iHhPsPkB9tjEqv8EUnOph0zX7GW0mIdA==
   dependencies:
-    immutable "~3.7.4"
+    immutable "^3.7.4"
 
-draft-js-utils@^0.1.7:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/draft-js-utils/-/draft-js-utils-0.1.7.tgz#e2b6927ca620edf1855a4bfc1cf1d21080a70f16"
-  integrity sha1-4raSfKYg7fGFWkv8HPHSEICnDxY=
-
-draft-js@^0.10.5:
-  version "0.10.5"
-  resolved "https://registry.yarnpkg.com/draft-js/-/draft-js-0.10.5.tgz#bfa9beb018fe0533dbb08d6675c371a6b08fa742"
-  integrity sha512-LE6jSCV9nkPhfVX2ggcRLA4FKs6zWq9ceuO/88BpXdNCS7mjRTgs0NsV6piUCJX9YxMsB9An33wnkMmU2sD2Zg==
-  dependencies:
-    fbjs "^0.8.15"
-    immutable "~3.7.4"
-    object-assign "^4.1.0"
+draft-js-utils@^1.4.0:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/draft-js-utils/-/draft-js-utils-1.4.1.tgz#a59c792ad621f7050292031a237d524708a6d509"
+  integrity sha512-xE81Y+z/muC5D5z9qWmKfxEW1XyXfsBzSbSBk2JRsoD0yzMGGHQm/0MtuqHl/EUDkaBJJLjJ2EACycoDMY/OOg==
 
 draft-js@^0.11.7:
   version "0.11.7"
@@ -1988,7 +1975,7 @@ fbjs-css-vars@^1.0.0:
   resolved "https://registry.yarnpkg.com/fbjs-css-vars/-/fbjs-css-vars-1.0.2.tgz#216551136ae02fe255932c3ec8775f18e2c078b8"
   integrity sha512-b2XGFAFdWZWg0phtAWLHCk836A1Xann+I+Dgd3Gk64MHKZO44FfoD1KxyvbSh0qZsIoXQGGlVztIY+oitJPpRQ==
 
-fbjs@^0.8.15, fbjs@^0.8.9:
+fbjs@^0.8.9:
   version "0.8.17"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
@@ -2042,11 +2029,6 @@ find-root@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/find-root/-/find-root-1.1.0.tgz#abcfc8ba76f708c42a97b3d685b7e9450bfb9ce4"
   integrity sha512-NKfW6bec6GfKc0SGx1e07QZY9PE99u0Bft/0rzSD5k3sO/vwkVUpDUKVm5Gpp5Ue3YfShPFTX2070tDs5kB9Ng==
-
-find-with-regex@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/find-with-regex/-/find-with-regex-1.1.3.tgz#d6c6f2debee898d36b6a77e05709b13dd5dc8a26"
-  integrity sha512-zkEVQ1H3PIQL/19ADKt1lCQU4QGM3OneiderUcFgn5EgTm/TnoUh7HxPAwP8w/vXxWSLC6KtpbDQpypJ5+majw==
 
 flat-cache@^1.2.1:
   version "1.3.0"
@@ -2133,23 +2115,23 @@ formalist-serialize-react@^1.0.6:
     formalist-data-object-renderer "^1.0.3"
     immutable "^3.7.6"
 
-"formalist-standard-react@https://github.com/readingsweb/formalist-standard-react#c6c6324":
+"formalist-standard-react@https://github.com/readingsweb/formalist-standard-react#6c21708":
   version "4.3.0"
-  resolved "https://github.com/readingsweb/formalist-standard-react#c6c6324a6c5d8c93c24b187930a87fbed3526089"
+  resolved "https://github.com/readingsweb/formalist-standard-react#6c217089232e38c9dfc8a8fdbe0622ab684c38ad"
   dependencies:
-    uid "^0.0.2"
+    uid "^2.0.2"
     attache-upload "^2.1.1"
     babel-plugin-emotion "^8.0.12"
     classnames "^2.2.5"
     clipboard "1.7.1"
     component-emitter "1.2.1"
-    draft-js "^0.10.5"
-    draft-js-ast-exporter "^2.0.0"
-    draft-js-ast-importer "^2.0.0"
-    draft-js-autolist-plugin "^2.0.0"
+    draft-js "^0.11.7"
+    draft-js-ast-exporter "^2.0.2"
+    draft-js-ast-importer "^2.0.3"
+    draft-js-autolist-plugin "^3.0.0"
     draft-js-block-breakout-plugin "^2.0.1"
-    draft-js-plugins-editor "^2.1.1"
-    draft-js-single-line-plugin "^2.0.1"
+    draft-js-plugins-editor "^3.0.0"
+    draft-js-single-line-plugin "^2.0.5"
     emotion "^8.0.8"
     es6-promise "^4.1.1"
     exif-js "2.3.0"
@@ -2394,6 +2376,11 @@ ignore@^3.1.2:
   version "3.3.10"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.10.tgz#0a97fb876986e8081c631160f8f9f389157f0043"
   integrity sha512-Pgs951kaMm5GXP7MOvxERINe3gsaVjUWFm+UZPSq9xYriQAksyhg0csnS0KXSNRD5NmNdapXEpjxG49+AKh/ug==
+
+immutable@^3.7.4:
+  version "3.8.4"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.4.tgz#af27c93537f09629c9d154a173cd55f7bfdc75fd"
+  integrity sha512-ZQv17KolYrYmsDoDB8N67zhIKsNi9mGYlk96y/yuxyAqJB2hLzSGSM7k/sB0/ZvO4kx27U9+fBeD/XlLGh/uXQ==
 
 immutable@^3.7.6:
   version "3.8.2"
@@ -3848,10 +3835,12 @@ ua-parser-js@^0.7.18:
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.18.tgz#a7bfd92f56edfb117083b69e31d2aa8882d4b1ed"
   integrity sha512-LtzwHlVHwFGTptfNSgezHp7WUlwiqb0gA9AALRbKaERfxwJoiX0A73QbTToxteIAuIaFshhgIZfqK8s7clqgnA==
 
-uid@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/uid/-/uid-0.0.2.tgz#5e4a5d4b78138b4f70f89fd3c76fc59aa9d2f103"
-  integrity sha1-XkpdS3gTi09w+J/Tx2/FmqnS8QM=
+uid@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/uid/-/uid-2.0.2.tgz#4b5782abf0f2feeefc00fa88006b2b3b7af3e3b9"
+  integrity sha512-u3xV3X7uzvi5b1MncmZo3i2Aw222Zk1keqLA1YkHldREkAhAqi65wuPfe7lHx8H/Wzy+8CE7S7uS3jekIM5s8g==
+  dependencies:
+    "@lukeed/csprng" "^1.0.0"
 
 undefsafe@^2.0.2:
   version "2.0.2"
@@ -3882,11 +3871,6 @@ unicode-property-aliases-ecmascript@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/unicode-property-aliases-ecmascript/-/unicode-property-aliases-ecmascript-2.2.0.tgz#301d4f8a43d2b75c97adfad87c9dd5350c9475d1"
   integrity sha512-hpbDzxUY9BFwX+UeBnxv3Sh1q7HFxj48DTmXchNgRa46lO8uj3/1iEn3MiNUYTg1g9ctIqXCCERn8gYZhHC5lQ==
-
-union-class-names@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/union-class-names/-/union-class-names-1.0.0.tgz#9259608adacc39094a2b0cfe16c78e6200617847"
-  integrity sha1-kllgitrMOQlKKwz+FseOYgBheEc=
 
 unique-string@^2.0.0:
   version "2.0.0"
