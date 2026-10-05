@@ -38,6 +38,7 @@
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-standard": "^1.3.2",
     "faucet": "0.0.1",
+    "nodemon": "^2.0.4",
     "tape": "^4.2.2"
   },
   "dependencies": {
@@ -50,7 +51,6 @@
     "formalist-serialize-react": "^1.0.6",
     "formalist-standard-react": "https://github.com/readingsweb/formalist-standard-react#c6c6324",
     "immutable": "^3.8.2",
-    "nodemon": "^2.0.4",
     "prop-types": "^15.7.2",
     "turbolinks": "^5.2.0",
     "viewloader": "2.0.0"
