@@ -19,6 +19,11 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
+"@hotwired/turbo@^8.0.23":
+  version "8.0.23"
+  resolved "https://registry.yarnpkg.com/@hotwired/turbo/-/turbo-8.0.23.tgz#a6eebc9ab4a5faadae265a4cbec8cfcb5731e77c"
+  integrity sha512-GZ7cijxEZ6Ig71u7rD6LHaRv/wcE/hNsc+nEfiWOkLNqUgLOwo5MNGWOy5ZV9ZUDSiQx1no7YxjTNnT4O6//cQ==
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -2069,10 +2074,21 @@ form-data@^2.3.1:
     combined-stream "1.0.6"
     mime-types "^2.1.12"
 
-"formalist-compose@^2.0.1 || ^3.0.1", "formalist-compose@^2.0.1 || ^3.0.2", formalist-compose@^3.0.2:
+"formalist-compose@^2.0.1 || ^3.0.1", "formalist-compose@^2.0.1 || ^3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/formalist-compose/-/formalist-compose-3.0.2.tgz#da3734876e59801a207c7120c40e100a4ebf49d8"
   integrity sha512-AEII2jPLagae09w7LEYQvSqdFehSyNPPN8qpe3Xg8IQPRZHXSGtxoDC7YMSCYQjL2bo+iYQZIPaG3T7xDyA+HA==
+  dependencies:
+    component-emitter "1.2.1"
+    formalist-validation "^1.0.0"
+    immutable "^3.7.6"
+    redux "^3.3.1"
+    redux-batched-actions "^0.1.2"
+
+formalist-compose@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/formalist-compose/-/formalist-compose-3.1.0.tgz#04e8e6d12b042eabfb7a52da2ab2842a92ef6c91"
+  integrity sha512-jtQqG/pwsfeW+DELeyJ0+1by4SLQc8nVp97DTpUJ5h7fyxq7fB4NWReZCWeLeOOhPs8DHkBZ0gKUQnocOaz/jg==
   dependencies:
     component-emitter "1.2.1"
     formalist-validation "^1.0.0"
@@ -2087,6 +2103,13 @@ formalist-data-object-renderer@^1.0.3:
   dependencies:
     formalist-compose "^2.0.1 || ^3.0.1"
 
+formalist-data-object-renderer@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/formalist-data-object-renderer/-/formalist-data-object-renderer-1.1.1.tgz#d54288108c07140e0d1db66faed9639a4488bcf3"
+  integrity sha512-qk4aI0HRTrTA2uSsiThznqPQQVNSY4J8pGvUl/rvY7+7FrXsmqNkKMaklSEpyk7oyBsnDJAXyO+xgsZZH+NzmA==
+  dependencies:
+    formalist-compose "^3.1.0"
+
 formalist-serialize-react@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/formalist-serialize-react/-/formalist-serialize-react-1.0.6.tgz#5f8bde3b0fdf05e9f06f943a052c5d34e5d11e20"
@@ -2096,10 +2119,9 @@ formalist-serialize-react@^1.0.6:
     formalist-data-object-renderer "^1.0.3"
     immutable "^3.7.6"
 
-formalist-standard-react@^4.1.8:
-  version "4.1.8"
-  resolved "https://registry.yarnpkg.com/formalist-standard-react/-/formalist-standard-react-4.1.8.tgz#60aac1dac47e8b33ab3fdaee32761b6ead68b4ba"
-  integrity sha512-dpOtFbX9YRO39LaPTD2670clixO68LkiWF0zFl/mhikbEgQgp5IHWLkGgtPX6ahAk83FPWMWjjmmcT7x2e8zcQ==
+"formalist-standard-react@https://github.com/readingsweb/formalist-standard-react#c6c6324":
+  version "4.3.0"
+  resolved "https://github.com/readingsweb/formalist-standard-react#c6c6324a6c5d8c93c24b187930a87fbed3526089"
   dependencies:
     uid "^0.0.2"
     attache-upload "^2.1.1"
@@ -2117,8 +2139,8 @@ formalist-standard-react@^4.1.8:
     emotion "^8.0.8"
     es6-promise "^4.1.1"
     exif-js "2.3.0"
-    formalist-compose "^3.0.2"
-    formalist-data-object-renderer "^1.0.3"
+    formalist-compose "^3.1.0"
+    formalist-data-object-renderer "^1.1.1"
     fuzzy "0.1.3"
     is-number "^4.0.0"
     lodash.assigninwith "^4.2.0"
@@ -4528,11 +4550,6 @@ trim-right@^1.0.1:
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
   integrity sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
 
-turbolinks@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/turbolinks/-/turbolinks-5.2.0.tgz#e6877a55ea5c1cb3bb225f0a4ae303d6d32ff77c"
-  integrity sha512-pMiez3tyBo6uRHFNNZoYMmrES/IaGgMhQQM+VFF36keryjb5ms0XkVpmKHkfW/4Vy96qiGW3K9bz0tF5sK9bBw==
-
 type-check@~0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/type-check/-/type-check-0.3.2.tgz#5884cab512cf1d355e3fb784f30804b2b520db72"
@@ -4664,10 +4681,10 @@ v8flags@^2.1.1:
   dependencies:
     user-home "^1.1.1"
 
-viewloader@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/viewloader/-/viewloader-2.0.2.tgz#5ab51e6e7da45a304a247ed8748c923cc66ce0e3"
-  integrity sha512-yLtTWofDfHxPxfElsJGYcjGRVkb/1lgPLWI+RzmcaRIM+WGFaP97EQpDRZaCC5srMP9CZx0PaApX39QVwOV3Nw==
+viewloader@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/viewloader/-/viewloader-2.0.0.tgz#26a8f020394708f8bb30392eb4318c449cf8bdf5"
+  integrity sha512-ZgTUg3RRaQWYIQ/8npreYgE15OIOeitXyAZo1DESIM/wKp2fAak5TvPzJG3V3ZmYoYSvDw63aTRNLFifndmqnQ==
 
 whatwg-fetch@>=0.10.0:
   version "3.0.0"

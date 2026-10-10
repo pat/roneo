@@ -1,3 +1,5 @@
+import * as Turbo from '@hotwired/turbo'
+
 /**
  * Navigat to the passed `href`
  * @param  {Event} e The original event
@@ -8,11 +10,7 @@ function goToLink (e, href) {
   if (e.metaKey) {
     window.open(href)
   } else {
-    if (window.Turbolinks) {
-      window.Turbolinks.visit(href)
-    } else {
-      window.location = href
-    }
+    Turbo.visit(href)
   }
 }
 

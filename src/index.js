@@ -1,4 +1,4 @@
-import 'turbolinks'
+import '@hotwired/turbo'
 import domready from 'domready'
 import viewloader from 'viewloader'
 
@@ -24,23 +24,19 @@ export default function roneo (views) {
   domready(function onDomready () {
     viewloaderManager.callViews()
   })
-  // DOMContentLoaded equivalent with Turbolinks
-  document.addEventListener('turbolinks:render', function onTurboLinksLoad () {
+  // DOMContentLoaded equivalent with Turbo
+  document.documentElement.addEventListener('turbo:render', function onTurboLoad () {
     viewloaderManager.callViews()
     let pageEl = document.querySelector('.page')
-    pageEl.classList.remove('page--inactive')
+    if (pageEl) pageEl.classList.remove('page--inactive')
   })
 
   // Destroy views when navigating
-  document.addEventListener('turbolinks:before-render', () => {
+  document.documentElement.addEventListener('turbo:before-render', () => {
     viewloaderManager.destroyViews()
-  })
-
-  // Hide nav when navigating
-  document.addEventListener('turbolinks:request-start', () => {
     setTimeout(removeNavOpenClasses, 50)
     let pageEl = document.querySelector('.page')
-    pageEl.classList.add('page--inactive')
+    if (pageEl) pageEl.classList.add('page--inactive')
   })
 
   /**

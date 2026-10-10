@@ -42,6 +42,7 @@
     "tape": "^4.2.2"
   },
   "dependencies": {
+    "@hotwired/turbo": "^8.0.23",
     "domready": "^1.0.8",
     "draft-js": "^0.11.7",
     "es5-shim": "^4.5.12",
@@ -52,7 +53,6 @@
     "formalist-standard-react": "https://github.com/readingsweb/formalist-standard-react#c6c6324",
     "immutable": "^3.8.2",
     "prop-types": "^15.7.2",
-    "turbolinks": "^5.2.0",
     "viewloader": "2.0.0"
   },
   "peerDependencies": {
